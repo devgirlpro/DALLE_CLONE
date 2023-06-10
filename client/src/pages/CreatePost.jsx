@@ -39,21 +39,25 @@ function CreatePost() {
                         lableName="Your Name"
                         type="text"
                         name="name"
-                        placeHolder="John Doe"
+                        placeholder="John Doe"
                         value={form.name}
-                        onChange={handleChange}
+                        handleChange={handleChange}
                     />
 
                     <FormField
                         lableName="prompt"
                         type="text"
                         name="prompt"
-                        placeHolder="Synthwave aeroplane"
+                        placeholder="Synthwave aeroplane"
                         value={form.propmt}
-                        onChange={handleChange}
+                        handleChange={handleChange}
                         isSuprizeMe
-                        onSuprizeMe={handleSuprizeMe}
+                        handleSurpriseMe={handleSuprizeMe}
                     />
+
+                    <div>
+                        
+                    </div>
                 </div>
             </form>
         </section>

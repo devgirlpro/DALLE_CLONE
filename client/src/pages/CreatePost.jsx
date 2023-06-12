@@ -17,9 +17,14 @@ function CreatePost() {
 
     const handleSubmit = () => {};
 
-    const handleChange = (e) => {};
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value})
+    };
 
-    const handleSuprizeMe = () => {};
+    const handleSuprizeMe = () => {
+        const randomPropmt = getRandomPrompt(form.propmt)
+        setForm({ ...form, propmt:randomPropmt })
+    };
 
     const generateImage = () => {};
 
